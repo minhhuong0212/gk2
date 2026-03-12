@@ -64,15 +64,10 @@ color:#AACDDC;
 }
 
 .site-hero{
-background:
-linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-url("background.png");
+background-image:url("background.png");
 background-size:contain;
 background-position:center;
 background-repeat:no-repeat;
-
-color:white;
-text-align:center;
 
 min-height:650px;
 
@@ -80,7 +75,8 @@ display:flex;
 align-items:center;
 justify-content:center;
 
-padding:120px 20px;
+color:white;
+text-align:center;
 }
 
 .site-btn{
@@ -273,6 +269,7 @@ text-decoration:none;
 .site-footer a:hover{
 color:white;
 }
+
 
 
 
