@@ -72,11 +72,12 @@ height: 500px;
 
 display:flex;
 align-items:center;
-justify-content:flex-start;
+justify-content:center;
+text-align:center;
 position:relative;
 }
 
-.site-hero::before{
+.site-hero: before{
 content:"";
 position:absolute;
 top:0;
@@ -295,6 +296,7 @@ text-decoration:none;
 .site-footer a:hover{
 color:white;
 }
+
 
 
 
