@@ -96,29 +96,19 @@ z-index:2;
 }
 
 .hero-content{
-text-align:center;
-color:white;
-max-width:600px;
+max-width: 450px;
+margin-left: 80px;
+color: #000;
 }
 
 .hero-content h1{
-font-size:42px;
-margin-bottom:10px;
+font-size: 42px;
+margin-bottom: 10px;
 }
 
 .hero-content p{
-margin-bottom:20px;
-font-size:18px;
-}
-
-.site-hero h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.site-hero p{
-font-size:18px;
-margin-bottom:20px;
+font-size: 18px;
+margin-bottom: 20px;
 }
 
 .site-btn{
@@ -311,6 +301,7 @@ text-decoration:none;
 .site-footer a:hover{
 color:white;
 }
+
 
 
 
