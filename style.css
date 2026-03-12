@@ -67,14 +67,14 @@ color:#AACDDC;
 background:
 linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
 url("background.png");
-background-size:cover;
+background-size:contain;
 background-position:center;
 background-repeat:no-repeat;
 
 color:white;
 text-align:center;
 
-min-height:600px;
+min-height:650px;
 
 display:flex;
 align-items:center;
@@ -273,6 +273,7 @@ text-decoration:none;
 .site-footer a:hover{
 color:white;
 }
+
 
 
 
