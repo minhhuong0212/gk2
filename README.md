@@ -1,8 +1,7 @@
-# README – Website Gốm Sứ Artisan
-
+# README – Website Gốm Sứ Chị Bờ Vai
 ## 1. Chủ đề dự án
 
-Tên dự án: **Website bán gốm sứ thủ công – Gốm Artisan**
+Tên dự án: **Website bán gốm sứ thủ công – Gốm sứ Chị Bờ Vai**
 
 Website được xây dựng nhằm mô phỏng một cửa hàng bán gốm sứ online.  
 Trang web giới thiệu các sản phẩm gốm như bình hoa, ly gốm, bộ ấm trà và các sản phẩm trang trí.
@@ -80,8 +79,4 @@ Dự án sử dụng các công nghệ:
 - CSS Grid
 
 Website là **website tĩnh**, không sử dụng framework hoặc backend.
-
----
-
-## 5. Cấu trúc thư mục
 
