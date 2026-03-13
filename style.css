@@ -159,6 +159,10 @@ box-shadow:0 4px 10px rgba(0,0,0,0.08);
 text-align:center;
 }
 
+.feature-item p{
+white-space:nowrap;
+}
+
 .site-product,
 .site-new-product{
 padding:60px 0;
@@ -301,6 +305,7 @@ text-decoration:none;
 .site-footer a:hover{
 color:white;
 }
+
 
 
 
