@@ -289,12 +289,18 @@ grid-template-columns:repeat(2,1fr);
 
 .site-header .site-container{
 flex-direction:column;
-gap:12px;
+gap:6px;
 }
 
 .site-nav ul{
-flex-direction:column;
-gap:8px;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+.site-nav a{
+font-size:14px;
 }
 
 .site-hero{
