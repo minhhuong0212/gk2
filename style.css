@@ -31,6 +31,7 @@ align-items:center;
 
 .site-logo{
 font-weight:bold;
+font-size:20px;
 }
 
 .site-nav ul{
@@ -44,18 +45,27 @@ color:white;
 text-decoration:none;
 }
 
+/* HERO (FIX HOÀN TOÀN) */
 .site-hero{
-background-image: url("https://raw.githubusercontent.com/minhhuong0212/2526_GK2_12F2_Ch-b-vai/main/background.png");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+background: url("https://raw.githubusercontent.com/minhhuong0212/2526_GK2_12F2_Ch-b-vai/main/background.png") center/cover no-repeat;
 
-min-height: 500px;
+min-height:500px;
 display:flex;
 align-items:center;
 justify-content:center;
+text-align:center;
 color:white;
-position: relative;
+padding:20px;
+}
+
+/* TEXT TRÊN HERO */
+.hero-content h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.hero-content p{
+margin-bottom:15px;
 }
 
 .site-btn{
@@ -140,6 +150,7 @@ padding:20px;
 
 .site-header .site-container{
 flex-direction:column;
+gap:10px;
 }
 
 .product-grid{
@@ -149,6 +160,10 @@ grid-template-columns:1fr;
 .detail-grid{
 grid-template-columns:1fr;
 text-align:center;
+}
+
+.hero-content h1{
+font-size:24px;
 }
 
 }
