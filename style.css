@@ -55,12 +55,11 @@ color:#AACDDC;
 
 
 .site-hero{
-background: url("../background.png"); center/cover no-repeat;
+background: url("https://minhhuong0212.github.io/2526_GK2_12F2_Ch-b-vai/background.png") center/cover no-repeat;
 min-height:600px;
 display:flex;
 align-items:center;
 justify-content:center;
-text-align:center;
 position:relative;
 color:white;
 }
