@@ -47,8 +47,8 @@ text-decoration:none;
 
 /* HERO (FIX HOÀN TOÀN) */
 .site-hero{
+.site-hero{
 background: url("https://raw.githubusercontent.com/minhhuong0212/2526_GK2_12F2_Ch-b-vai/main/background.png") center/contain no-repeat;
-
 min-height:500px;
 display:flex;
 align-items:center;
