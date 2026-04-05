@@ -35,9 +35,7 @@ img {
     display: block;
 }
 
-/* ============================================================
-   2. HEADER (Sửa lỗi dàn hàng ngang & màu sắc)
-   ============================================================ */
+
 .site-header {
     background: #1A3263; /* Màu xanh đậm chủ đạo */
     padding: 15px 0;
@@ -79,9 +77,7 @@ img {
     color: #AACDDC !important;
 }
 
-/* ============================================================
-   3. HERO SECTION
-   ============================================================ */
+
 .site-hero {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                 url('https://raw.githubusercontent.com/minhhuong0212/2526_GK2_12F2_Ch-b-vai/main/background.png') center/cover no-repeat;
@@ -121,9 +117,6 @@ img {
     transform: translateY(-2px);
 }
 
-/* ============================================================
-   4. PRODUCT GRID (Dùng cho Shop & Trang chủ)
-   ============================================================ */
 .section-title {
     text-align: center;
     margin: 50px 0 30px;
@@ -171,9 +164,7 @@ img {
     font-size: 1.2rem;
 }
 
-/* ============================================================
-   5. FOOTER
-   ============================================================ */
+
 .site-footer {
     background: #1A3263;
     color: white;
@@ -217,9 +208,7 @@ img {
     opacity: 0.6;
 }
 
-/* ============================================================
-   6. RESPONSIVE (MEDIA QUERIES)
-   ============================================================ */
+
 
 /* Tablet (Dưới 992px) */
 @media (max-width: 992px) {
