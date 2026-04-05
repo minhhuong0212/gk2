@@ -6,28 +6,36 @@
 <title>Gốm sứ Chị Bờ Vai</title>
 
 <link rel="stylesheet" href="style.css">
-</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-<body>
-
-<!-- HEADER -->
 <header class="site-header">
-    <div class="site-container">
+    <div class="container header-flex">
+        <div class="logo">
+            <a href="index.html" style="color: white; text-decoration: none;">Gốm sứ Chị Bờ Vai</a>
+        </div>
 
-        <div class="site-logo">Gốm sứ Chị Bờ Vai</div>
-
-        <nav class="site-nav">
-            <ul>
+        <nav>
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
 
+        <div class="header-icons">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="cart.html" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </div>
 </header>
 
