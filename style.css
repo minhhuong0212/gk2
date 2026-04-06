@@ -1681,3 +1681,74 @@ body { background: #F3E3D0; color: #333; }
             color: white; 
 
             padding: 15px; 
+
+            /* ===== BỔ SUNG: HIỂN THỊ DANH SÁCH SẢN PHẨM ===== */
+
+/* 1. Cấu trúc lưới để các sản phẩm dàn hàng ngang */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 40px 0;
+}
+
+/* 2. Định dạng từng khung thẻ sản phẩm */
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 3. Căn chỉnh hình ảnh sản phẩm */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* Giữ nguyên tỉ lệ ảnh gốm sứ */
+    margin-bottom: 15px;
+}
+
+/* 4. Định dạng tên và giá tiền */
+.product-card h3 {
+    font-size: 18px;
+    color: #1A3263; /* Màu xanh navy chủ đạo */
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* 5. Nút "Thêm vào giỏ" */
+.btn-add-cart {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-add-cart:hover {
+    background: #1A3263;
+    color: #fff;
+}
+
+/* Fix tiêu đề "Tất cả sản phẩm" */
+.section-title {
+    background-color: #F3E3D0; /* Màu nền kem */
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
