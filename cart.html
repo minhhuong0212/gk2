@@ -3,153 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Giỏ hàng | Gốm sứ Chị Bờ Vai</title>
+<title>Giỏ hàng</title>
 
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-<style>
-body { font-family: Arial; }
-.container { width: 90%; margin: auto; }
-
-.site-header {
-    background: black;
-    color: white;
-    padding: 15px;
-}
-
-.cart-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.cart-table th, .cart-table td {
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-.qty-input { width: 60px; }
-
-.remove-btn {
-    background: red;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.cart-summary {
-    margin-top: 20px;
-    text-align: right;
-}
-
-.btn-checkout {
-    background: black;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-/* FORM THANH TOÁN */
-.checkout-form {
-    margin-top: 30px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    display: none;
-}
-
-.checkout-form input, .checkout-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 8px 0;
-}
-</style>
 </head>
 
 <body>
 
 <header class="site-header">
-<div class="container">
-    <h2>🛒 Giỏ hàng</h2>
-</div>
+    <div class="container header-flex">
+        <div class="logo">
+            <a href="index.html" style="color: white; text-decoration: none;">Gốm sứ Chị Bờ Vai</a>
+        </div>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="shop.html">Cửa hàng</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="blog.html">Tin tức</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<div class="container">
-    <h2>Sản phẩm đã chọn</h2>
+<div class="site-container" id="products">
+    <h2 class="section-title">Tất cả sản phẩm</h2>
 
-    <table class="cart-table">
-        <thead>
-            <tr>
-                <th>Sản phẩm</th>
-                <th>Giá</th>
-                <th>Số lượng</th>
-                <th>Tổng</th>
-                <th>Xoá</th>
-            </tr>
-        </thead>
-        <tbody id="cart-body"></tbody>
-    </table>
+<h1>Giỏ hàng</h1>
 
-    <div class="cart-summary">
-        <h3>Tổng tiền: <span id="total">0</span>đ</h3>
-        <button class="btn-checkout" onclick="showCheckout()">Thanh toán</button>
-    </div>
+<table border="1" width="100%">
+<thead>
+<tr>
+<th>Sản phẩm</th>
+<th>Giá</th>
+<th>Số lượng</th>
+<th>Tổng</th>
+<th>Xoá</th>
+</tr>
+</thead>
 
-    <!-- FORM THANH TOÁN -->
-    <div class="checkout-form" id="checkout-form">
-        <h3>Thông tin khách hàng</h3>
-        <input type="text" id="name" placeholder="Họ và tên">
-        <input type="text" id="phone" placeholder="Số điện thoại">
-        <textarea id="address" placeholder="Địa chỉ"></textarea>
+<tbody id="cart-body"></tbody>
+</table>
 
-        <button class="btn-checkout" onclick="checkout()">Xác nhận thanh toán</button>
-    </div>
+<h2>Tổng tiền: <span id="total">0</span>đ</h2>
+
+<!-- ✅ NÚT THANH TOÁN -->
+<button onclick="showCheckout()">Thanh toán</button>
+
+<!-- ✅ FORM THANH TOÁN -->
+<div id="checkout-form" style="display:none; margin-top:20px;">
+    <h3>Thông tin khách hàng</h3>
+    <input type="text" id="name" placeholder="Họ và tên"><br><br>
+    <input type="text" id="phone" placeholder="Số điện thoại"><br><br>
+    <textarea id="address" placeholder="Địa chỉ"></textarea><br><br>
+
+    <button onclick="checkout()">Xác nhận thanh toán</button>
 </div>
 
 <script>
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let cartBody = document.getElementById("cart-body");
 
 function renderCart() {
-    let body = document.getElementById("cart-body");
-    body.innerHTML = "";
-    let total = 0;
+cartBody.innerHTML = "";
+let total = 0;
 
-    cart.forEach((item, index) => {
-        let subtotal = item.price * item.qty;
-        total += subtotal;
+cart.forEach((item, index) => {
+let subtotal = item.price * item.qty;
+total += subtotal;
 
-        body.innerHTML += `
-        <tr>
-            <td>${item.name}</td>
-            <td>${item.price.toLocaleString()}đ</td>
-            <td>
-                <input type="number" value="${item.qty}" min="1"
-                onchange="changeQty(${index}, this.value)" class="qty-input">
-            </td>
-            <td>${subtotal.toLocaleString()}đ</td>
-            <td><button class="remove-btn" onclick="removeItem(${index})">X</button></td>
-        </tr>
-        `;
-    });
+cartBody.innerHTML += `
+<tr>
+<td>${item.name}</td>
+<td>${item.price.toLocaleString()}đ</td>
+<td>
+<input type="number" value="${item.qty}" min="1" onchange="changeQty(${index}, this.value)">
+</td>
+<td>${subtotal.toLocaleString()}đ</td>
+<td><button onclick="removeItem(${index})">X</button></td>
+</tr>
+`;
+});
 
-    document.getElementById("total").innerText = total.toLocaleString();
+document.getElementById("total").innerText = total.toLocaleString();
 }
 
 function changeQty(index, qty) {
-    cart[index].qty = Number(qty);
-    localStorage.setItem("cart", JSON.stringify(cart));
-    renderCart();
+cart[index].qty = Number(qty);
+localStorage.setItem("cart", JSON.stringify(cart));
+renderCart();
 }
 
 function removeItem(index) {
-    cart.splice(index, 1);
-    localStorage.setItem("cart", JSON.stringify(cart));
-    renderCart();
+cart.splice(index, 1);
+localStorage.setItem("cart", JSON.stringify(cart));
+renderCart();
 }
 
-// hiện form thanh toán
+renderCart();
+
+<!-- ✅ JS THANH TOÁN -->
 function showCheckout() {
     if (cart.length === 0) {
         alert("Giỏ hàng đang trống!");
@@ -158,7 +115,6 @@ function showCheckout() {
     document.getElementById("checkout-form").style.display = "block";
 }
 
-// xử lý thanh toán
 function checkout() {
     let name = document.getElementById("name").value;
     let phone = document.getElementById("phone").value;
@@ -174,9 +130,34 @@ function checkout() {
     localStorage.removeItem("cart");
     location.reload();
 }
-
-renderCart();
 </script>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div>
+                <h3>Về chúng tôi</h3>
+                <p>Gốm sứ Chị Bờ Vai - Tôn vinh vẻ đẹp gốm Việt thủ công.</p>
+            </div>
+
+            <div>
+                <h3>Liên hệ</h3>
+                <p>Email: gomsuchibovai@gmail.com</p>
+                <p>Hotline: 0909 123 456</p>
+            </div>
+
+            <div>
+                <h3>Kết nối</h3>
+                <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+                <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 Gốm sứ Chị Bờ Vai
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
