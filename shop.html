@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <style>
-/* thêm chút style để nhìn ổn hơn nếu chưa có CSS */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -38,6 +37,15 @@
     color: #c0392b;
     font-weight: bold;
 }
+
+.btn-add-cart {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
 </style>
 
 </head>
@@ -57,7 +65,12 @@
                 <li><a href="about.html">Giới thiệu</a></li>
                 <li><a href="blog.html">Tin tức</a></li>
                 <li><a href="contact.html">Liên hệ</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li>
+                    <a href="cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        (<span id="cart-count">0</span>)
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -72,73 +85,84 @@
             <img src="https://raw.githubusercontent.com/minhhuong0212/2526_GK2_12F2_Ch-b-vai/main/b%C3%ACnh%20hoa.png">
             <h3>Bình Hoa</h3>
             <p class="price">350.000đ</p>
+            <button class="btn-add-cart" data-name="Bình Hoa" data-price="350000">Thêm vào giỏ</button>
         </div>
 
         <div class="product-card">
             <img src="https://raw.githubusercontent.com/minhhuong0212/2526_GK2_12F2_Ch-b-vai/main/ly.png">
             <h3>Ly</h3>
             <p class="price">150.000đ</p>
+            <button class="btn-add-cart" data-name="Ly" data-price="150000">Thêm vào giỏ</button>
         </div>
 
         <div class="product-card">
             <img src="https://raw.githubusercontent.com/minhhuong0212/2526_GK2_12F2_Ch-b-vai/main/%C4%91%C4%A9a.png">
             <h3>Đĩa</h3>
             <p class="price">200.000đ</p>
+            <button class="btn-add-cart" data-name="Đĩa" data-price="200000">Thêm vào giỏ</button>
         </div>
 
         <div class="product-card">
             <img src="https://raw.githubusercontent.com/minhhuong0212/2526_GK2_12F2_Ch-b-vai/main/b%E1%BB%99%20%E1%BA%A5m%20tr%C3%A0.png">
             <h3>Ấm trà</h3>
             <p class="price">480.000đ</p>
+            <button class="btn-add-cart" data-name="Ấm trà" data-price="480000">Thêm vào giỏ</button>
         </div>
-
-        <!-- ảnh mới -->
 
         <div class="product-card">
             <img src="https://cdn.hstatic.net/products/200000532849/112776296-sm-01_30a70e09bcbf43f4850a7f341d4e3566_large.png">
             <h3>Bình hoa gốm</h3>
             <p class="price">120.000đ</p>
+            <button class="btn-add-cart" data-name="Bình hoa gốm" data-price="120000">Thêm vào giỏ</button>
         </div>
 
         <div class="product-card">
             <img src="https://cdn.hstatic.net/products/200000532849/gt23041582161-sm-01_9f0cf56669a34d8481624d4bc4d4091b_large.png">
             <h3>Đĩa gốm</h3>
             <p class="price">130.000đ</p>
+            <button class="btn-add-cart" data-name="Đĩa gốm" data-price="130000">Thêm vào giỏ</button>
         </div>
 
         <div class="product-card">
             <img src="https://cdn.hstatic.net/products/200000532849/012803856203-sm-01_6abf2ccf291d4b859bcc83ead0a0d19f_large.png">
             <h3>Ấm trà gốm</h3>
             <p class="price">140.000đ</p>
+            <button class="btn-add-cart" data-name="Ấm trà gốm" data-price="140000">Thêm vào giỏ</button>
         </div>
 
         <div class="product-card">
             <img src="https://product.hstatic.net/200000532849/product/f813_1edacff4c1da4f59b7ce5c707481feb7_ce7853d6b7274444a4735dcaff4b7eab_c5754f41d10e4b84b58723503554cd4e_large.png">
             <h3>Thố</h3>
             <p class="price">150.000đ</p>
+            <button class="btn-add-cart" data-name="Thố" data-price="150000">Thêm vào giỏ</button>
         </div>
 
         <div class="product-card">
             <img src="https://product.hstatic.net/200000532849/product/khay-ruou-215-cm-misc-assortment_82e7dfd8ab7047d6b57ab7ca17a0529b_large.png">
             <h3>Khay mứt</h3>
             <p class="price">160.000đ</p>
+            <button class="btn-add-cart" data-name="Khay mứt" data-price="160000">Thêm vào giỏ</button>
         </div>
 
         <div class="product-card">
             <img src="https://cdn.hstatic.net/products/200000532849/avatar_860083657a6a466ca24a578c34a60fa5_large.png">
             <h3>Bộ ấm trà trắng</h3>
             <p class="price">200.000đ</p>
+            <button class="btn-add-cart" data-name="Bộ ấm trà trắng" data-price="200000">Thêm vào giỏ</button>
         </div>
 
         <div class="product-card">
             <img src="https://product.hstatic.net/200000532849/product/060906000__1__2c2dc1f638e3430c944368385db80be2_large.png">
             <h3>Hộp</h3>
             <p class="price">170.000đ</p>
+            <button class="btn-add-cart" data-name="Hộp" data-price="170000">Thêm vào giỏ</button>
         </div>
+
         <div class="product-card">
             <img src="https://product.hstatic.net/200000532849/product/80_1_4c2af0ddd6b8430bb004cae5349cfd0e_large.png">
             <h3>Đĩa trái cây</h3>
             <p class="price">180.000đ</p>
+            <button class="btn-add-cart" data-name="Đĩa trái cây" data-price="180000">Thêm vào giỏ</button>
         </div>
 
     </div>
@@ -170,6 +194,36 @@
         </div>
     </div>
 </footer>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function updateCartCount() {
+    document.getElementById("cart-count").innerText = cart.reduce((sum, item) => sum + item.qty, 0);
+}
+
+document.querySelectorAll(".btn-add-cart").forEach(btn => {
+    btn.onclick = () => {
+        let name = btn.dataset.name;
+        let price = Number(btn.dataset.price);
+
+        let existing = cart.find(item => item.name === name);
+
+        if (existing) {
+            existing.qty++;
+        } else {
+            cart.push({ name, price, qty: 1 });
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+
+        alert("Đã thêm vào giỏ 🛒");
+    };
+});
+
+updateCartCount();
+</script>
 
 </body>
 </html>
