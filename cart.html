@@ -3,58 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cửa hàng | Gốm sứ Chị Bờ Vai</title>
+    <title>Giỏ hàng | Gốm sứ Chị Bờ Vai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
     <header class="site-header">
         <div class="container header-flex">
             <a href="index.html" class="logo">Gốm sứ Chị Bờ Vai</a>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html">TRANG CHỦ</a></li>
-                    <li><a href="shop.html">CỬA HÀNG</a></li>
-                    <li><a href="about.html">GIỚI THIỆU</a></li>
-                    <li><a href="blog.html">TIN TỨC</a></li>
-                    <li><a href="contact.html">LIÊN HỆ</a></li>
-                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="shop.html">Cửa hàng</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="blog.html">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container">
-        <h1 class="page-title">Tất cả sản phẩm</h1>
+    <main class="cart-section">
+        <div class="container">
+            <h1 class="cart-title">Giỏ hàng của bạn</h1>
 
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?q=80&w=600" alt="Bình hoa">
-                <h3>Bình Hoa</h3>
-                <p>350.000đ</p>
-                <button class="add-btn">Thêm vào giỏ</button>
+            <div class="cart-table-wrapper">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Tổng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="cart-item-info">
+                                    <img src="https://via.placeholder.com/70" alt="Bát sứ họa tiết cổ">
+                                    <span class="cart-item-name">Bát sứ họa tiết cổ</span>
+                                </div>
+                            </td>
+                            <td class="price">250.000đ</td>
+                            <td>
+                                <input type="number" value="1" min="1" class="qty-input">
+                            </td>
+                            <td class="subtotal">250.000đ</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?q=80&w=600" alt="Ly sứ">
-                <h3>Ly Sứ</h3>
-                <p>150.000đ</p>
-                <button class="add-btn">Thêm vào giỏ</button>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1590650153855-d9e808231d41?q=80&w=600" alt="Đĩa gốm">
-                <h3>Đĩa Gốm</h3>
-                <p>200.000đ</p>
-                <button class="add-btn">Thêm vào giỏ</button>
-            </div>
-
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e35ca?q=80&w=600" alt="Ấm trà">
-                <h3>Ấm Trà</h3>
-                <p>480.000đ</p>
-                <button class="add-btn">Thêm vào giỏ</button>
+            <div class="cart-summary-wrapper">
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Tổng tiền:</span>
+                        <span class="total-amount">250.000đ</span>
+                    </div>
+                    <button class="btn-checkout">Thanh toán ngay</button>
+                </div>
             </div>
         </div>
     </main>
