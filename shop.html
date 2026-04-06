@@ -9,106 +9,167 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <style>
+/* thêm chút style để nhìn ổn hơn nếu chưa có CSS */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
+
 .product-card {
     border: 1px solid #eee;
     padding: 15px;
     text-align: center;
     border-radius: 10px;
+    transition: 0.3s;
 }
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
 .product-card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
 }
-.price { color: red; font-weight: bold; }
-.btn-add-cart {
-    margin-top: 10px;
-    padding: 8px 12px;
-    background: black;
-    color: white;
-    border: none;
-    cursor: pointer;
+
+.price {
+    color: #c0392b;
+    font-weight: bold;
 }
 </style>
+
 </head>
 
 <body>
 
 <header class="site-header">
-<div class="container header-flex">
-<div class="logo">Gốm sứ Chị Bờ Vai</div>
+    <div class="container header-flex">
+        <div class="logo">
+            <a href="index.html" style="color: white; text-decoration: none;">Gốm sứ Chị Bờ Vai</a>
+        </div>
 
-<ul class="nav-menu">
-<li><a href="index.html">Trang chủ</a></li>
-<li><a href="shop.html">Cửa hàng</a></li>
-<li>
-<a href="cart.html">
-<i class="fa-solid fa-cart-shopping"></i>
-(<span id="cart-count">0</span>)
-</a>
-</li>
-</ul>
-</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="shop.html">Cửa hàng</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="blog.html">Tin tức</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<div class="container">
-<h2>Tất cả sản phẩm</h2>
+<div class="site-container" id="products">
+    <h2 class="section-title">Tất cả sản phẩm</h2>
 
-<div class="product-grid">
+    <div class="product-grid">
 
-<div class="product-card">
-<img src="https://cdn.hstatic.net/products/200000532849/112776296-sm-01_30a70e09bcbf43f4850a7f341d4e3566_large.png">
-<h3>Bình Hoa</h3>
-<p class="price">350.000đ</p>
-<button class="btn-add-cart" data-name="Bình Hoa" data-price="350000">Thêm vào giỏ</button>
+        <div class="product-card">
+            <img src="https://raw.githubusercontent.com/minhhuong0212/2526_GK2_12F2_Ch-b-vai/main/b%C3%ACnh%20hoa.png">
+            <h3>Bình Hoa</h3>
+            <p class="price">350.000đ</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://raw.githubusercontent.com/minhhuong0212/2526_GK2_12F2_Ch-b-vai/main/ly.png">
+            <h3>Ly</h3>
+            <p class="price">150.000đ</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://raw.githubusercontent.com/minhhuong0212/2526_GK2_12F2_Ch-b-vai/main/%C4%91%C4%A9a.png">
+            <h3>Đĩa</h3>
+            <p class="price">200.000đ</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://raw.githubusercontent.com/minhhuong0212/2526_GK2_12F2_Ch-b-vai/main/b%E1%BB%99%20%E1%BA%A5m%20tr%C3%A0.png">
+            <h3>Ấm trà</h3>
+            <p class="price">480.000đ</p>
+        </div>
+
+        <!-- ảnh mới -->
+
+        <div class="product-card">
+            <img src="https://cdn.hstatic.net/products/200000532849/112776296-sm-01_30a70e09bcbf43f4850a7f341d4e3566_large.png">
+            <h3>Bình hoa gốm</h3>
+            <p class="price">120.000đ</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://cdn.hstatic.net/products/200000532849/gt23041582161-sm-01_9f0cf56669a34d8481624d4bc4d4091b_large.png">
+            <h3>Đĩa gốm</h3>
+            <p class="price">130.000đ</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://cdn.hstatic.net/products/200000532849/012803856203-sm-01_6abf2ccf291d4b859bcc83ead0a0d19f_large.png">
+            <h3>Ấm trà gốm</h3>
+            <p class="price">140.000đ</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://product.hstatic.net/200000532849/product/f813_1edacff4c1da4f59b7ce5c707481feb7_ce7853d6b7274444a4735dcaff4b7eab_c5754f41d10e4b84b58723503554cd4e_large.png">
+            <h3>Thố</h3>
+            <p class="price">150.000đ</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://product.hstatic.net/200000532849/product/khay-ruou-215-cm-misc-assortment_82e7dfd8ab7047d6b57ab7ca17a0529b_large.png">
+            <h3>Khay mứt</h3>
+            <p class="price">160.000đ</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://cdn.hstatic.net/products/200000532849/avatar_860083657a6a466ca24a578c34a60fa5_large.png">
+            <h3>Bộ ấm trà trắng</h3>
+            <p class="price">200.000đ</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://product.hstatic.net/200000532849/product/060906000__1__2c2dc1f638e3430c944368385db80be2_large.png">
+            <h3>Hộp</h3>
+            <p class="price">170.000đ</p>
+        </div>
+        <div class="product-card">
+            <img src="https://product.hstatic.net/200000532849/product/80_1_4c2af0ddd6b8430bb004cae5349cfd0e_large.png">
+            <h3>Đĩa trái cây</h3>
+            <p class="price">180.000đ</p>
+        </div>
+
+    </div>
 </div>
 
-<div class="product-card">
-<img src="https://cdn.hstatic.net/products/200000532849/012803856203-sm-01_6abf2ccf291d4b859bcc83ead0a0d19f_large.png">
-<h3>Ấm trà</h3>
-<p class="price">480.000đ</p>
-<button class="btn-add-cart" data-name="Ấm trà" data-price="480000">Thêm vào giỏ</button>
-</div>
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div>
+                <h3>Về chúng tôi</h3>
+                <p>Gốm sứ Chị Bờ Vai - Tôn vinh vẻ đẹp gốm Việt thủ công.</p>
+            </div>
 
-<div class="product-card">
-<img src="https://product.hstatic.net/200000532849/product/80_1_4c2af0ddd6b8430bb004cae5349cfd0e_large.png">
-<h3>Đĩa trái cây</h3>
-<p class="price">180.000đ</p>
-<button class="btn-add-cart" data-name="Đĩa trái cây" data-price="180000">Thêm vào giỏ</button>
-</div>
+            <div>
+                <h3>Liên hệ</h3>
+                <p>Email: gomsuchibovai@gmail.com</p>
+                <p>Hotline: 0909 123 456</p>
+            </div>
 
-</div>
-</div>
+            <div>
+                <h3>Kết nối</h3>
+                <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+                <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+            </div>
+        </div>
 
-<script>
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-function updateCartCount() {
-document.getElementById("cart-count").innerText = cart.length;
-}
-
-document.querySelectorAll(".btn-add-cart").forEach(btn => {
-btn.onclick = () => {
-let item = {
-name: btn.dataset.name,
-price: Number(btn.dataset.price),
-qty: 1
-};
-
-cart.push(item);
-localStorage.setItem("cart", JSON.stringify(cart));
-updateCartCount();
-alert("Đã thêm vào giỏ 🛒");
-};
-});
-
-updateCartCount();
-</script>
+        <div class="footer-bottom">
+            &copy; 2026 Gốm sứ Chị Bờ Vai
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
