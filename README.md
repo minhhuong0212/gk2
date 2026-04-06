@@ -12,11 +12,11 @@ Dự án tập trung xây dựng một **Website thương mại điện tử tĩ
 
 | STT | Họ và tên | Vai trò & Công việc chi tiết |
 |:---:|-----------|-----------------------------|
-| 1 | **Trần Ngọc Hà My** | Thiết kế cấu trúc các Section (Header, Hero, Feature, Footer). |
-| 2 | **Lý Đoàn Xuân Khiết** | Xây dựng khung xương HTML5 toàn bộ hệ thống. |
-| 3 | **Lục Phương Vy** | Thiết kế CSS3, áp dụng Flexbox/Grid và hiệu ứng Hover. |
-| 4 | **Nguyễn Phan Minh Hương** | Biên tập nội dung, hình ảnh sản phẩm và giá niêm yết. |
-| 5 | **Huỳnh Nguyễn Bảo Trân** | Kiểm tra lỗi UI/UX, chỉnh sửa layout và hoàn thiện đóng gói. |
+| 1 | **Trần Ngọc Hà My** | Lập cấu trúc Header, Footer dùng chung. Phụ trách trang Index.html và About.html. |
+| 2 | **Lý Đoàn Xuân Khiết** | Xây dựng cấu trúc và nội dung trang Shop.html và Product.html (Chi tiết sản phẩm). |
+| 3 | **Lục Phương Vy** | Thiết kế CSS hệ thống (Màu sắc, Font). Phụ trách trang Cart.html và Blog.html. |
+| 4 | **Nguyễn Phan Minh Hương** | Phụ trách trang Contact.html. Chuẩn bị toàn bộ hình ảnh, viết mô tả và giá cho tất cả sản phẩm.|
+| 5 | **Huỳnh Nguyễn Bảo Trân** | Kiểm tra lỗi hiển thị (Responsive), tối ưu hóa code và viết tài liệu README.md. |
 
 ---
 
