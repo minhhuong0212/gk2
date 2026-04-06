@@ -1760,17 +1760,5 @@ body { background: #F3E3D0; color: #333; }
     margin: 0;
 }
 
-.site-container {
-    flex: 1; /* Tự động giãn ra để đẩy footer xuống dưới cùng */
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.site-footer {
-    width: 100%; /* Đảm bảo footer tràn hết chiều ngang */
-    background: #1A3263;
-    color: white;
-    padding: 50px 0 20px;
-    margin-top: 50px;
-}
+
