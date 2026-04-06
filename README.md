@@ -50,4 +50,4 @@ Truy cập đường dẫn:
 `https://minhhuong0212.github.io/2526_GK2_12F2_Ch-b-vai/index.html`
 
 ---
-*Dự án được thực hiện bởi tập thể lớp 12F2 – Trường Đinh Thiện Lý (Lawrence S. Ting School).*
+
