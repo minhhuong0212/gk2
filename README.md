@@ -41,18 +41,11 @@ Dự án đã hoàn thiện các trang chức năng chính sau:
 ## 5. Nguồn ảnh & Icon
 * **Icon:** [Font Awesome](https://fontawesome.com/)
 * **Hình ảnh:** Hình ảnh sản phẩm gốm sứ được tham khảo từ các làng nghề truyền thống.
-* **Placeholder:** Sử dụng dịch vụ [Via Placeholder](https://via.placeholder.com) cho các sản phẩm đang cập nhật.
 
 ---
 
 ## 6. Cách chạy dự án
-Bạn có thể xem website theo hai cách sau:
 
-### Cách 1: Chạy trực tiếp trên máy cục bộ
-1. Tải toàn bộ thư mục project về máy.
-2. Mở file `index.html` bằng bất kỳ trình duyệt web nào (Chrome, Edge, Firefox).
-
-### Cách 2: Xem qua link Deploy (nếu có)
 Truy cập đường dẫn:  
 `https://minhhuong0212.github.io/2526_GK2_12F2_Ch-b-vai/index.html`
 
