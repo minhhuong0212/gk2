@@ -1,130 +1,60 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gốm sứ Chị Bờ Vai | Trang chủ</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+# README – Website Gốm Sứ Chị Bờ Vai
 
-    <header class="site-header">
-        <div class="container header-flex">
-            <div class="logo">
-                <a href="index.html">Gốm sứ Chị Bờ Vai</a>
-            </div>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="active">Trang chủ</a></li>
-                    <li><a href="shop.html">Cửa hàng</a></li>
-                    <li><a href="about.html">Giới thiệu</a></li>
-                    <li><a href="blog.html">Tin tức</a></li>
-                    <li><a href="contact.html">Liên hệ</a></li>
-                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+## 1. Chủ đề dự án
+Dự án tập trung xây dựng một **Website thương mại điện tử tĩnh** mô phỏng cửa hàng bán gốm sứ thủ công online.  
+* **Tên thương hiệu:** Gốm sứ Chị Bờ Vai.
+* **Sản phẩm kinh doanh:** Các mặt hàng thủ công như bình hoa, ly gốm, ấm trà và đồ trang trí.
+* **Phong cách thiết kế:** Kết hợp giữa vẻ đẹp truyền thống Việt Nam và giao diện hiện đại (Xanh Navy & Kem nhạt).
 
-    <section class="site-hero">
-        <div class="hero-content">
-            <h1>Gốm sứ thủ công cao cấp</h1>
-            <p>Khám phá vẻ đẹp truyền thống Việt Nam qua từng đường nét chạm trổ.</p>
-            <a href="shop.html" class="site-btn">Khám phá ngay</a>
-        </div>
-    </section>
+---
 
-    <section class="features container">
-        <div class="feature-item">
-            <i class="fa-solid fa-truck-fast"></i>
-            <h3>Giao hàng nhanh</h3>
-            <p>Đảm bảo an toàn cho sản phẩm gốm sứ.</p>
-        </div>
-        <div class="feature-item">
-            <i class="fa-solid fa-hand-sparkles"></i>
-            <h3>Thủ công 100%</h3>
-            <p>Chế tác tỉ mỉ từ nghệ nhân lâu đời.</p>
-        </div>
-        <div class="feature-item">
-            <i class="fa-solid fa-headset"></i>
-            <h3>Hỗ trợ 24/7</h3>
-            <p>Tư vấn tận tình về các dòng gốm.</p>
-        </div>
-    </section>
+## 2. Danh sách thành viên & Phân công công việc
 
-    <main class="container section-padding">
-        <h2 class="section-title">Sản phẩm nổi bật</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="binh-hoa.jpg" alt="Bình hoa">
-                </div>
-                <h3>Bình Hoa</h3>
-                <p class="price">350.000đ</p>
-                <button class="btn-add-cart">Thêm vào giỏ</button>
-            </div>
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="ly-gom.jpg" alt="Ly gốm">
-                </div>
-                <h3>Ly Gốm</h3>
-                <p class="price">150.000đ</p>
-                <button class="btn-add-cart">Thêm vào giỏ</button>
-            </div>
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="am-tra.jpg" alt="Ấm trà">
-                </div>
-                <h3>Bộ Ấm Trà</h3>
-                <p class="price">480.000đ</p>
-                <button class="btn-add-cart">Thêm vào giỏ</button>
-            </div>
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="dia-trang-tri.jpg" alt="Đĩa">
-                </div>
-                <h3>Đĩa Trang Trí</h3>
-                <p class="price">200.000đ</p>
-                <button class="btn-add-cart">Thêm vào giỏ</button>
-            </div>
-        </div>
-    </main>
+| STT | Họ và tên | Vai trò & Công việc chi tiết |
+|:---:|-----------|-----------------------------|
+| 1 | **Trần Ngọc Hà My** | Thiết kế cấu trúc các Section (Header, Hero, Feature, Footer). |
+| 2 | **Lý Đoàn Xuân Khiết** | Xây dựng khung xương HTML5 toàn bộ hệ thống. |
+| 3 | **Lục Phương Vy** | Thiết kế CSS3, áp dụng Flexbox/Grid và hiệu ứng Hover. |
+| 4 | **Nguyễn Phan Minh Hương** | Biên tập nội dung, hình ảnh sản phẩm và giá niêm yết. |
+| 5 | **Huỳnh Nguyễn Bảo Trân** | Kiểm tra lỗi UI/UX, chỉnh sửa layout và hoàn thiện đóng gói. |
 
-    <section class="newsletter">
-        <div class="container">
-            <h2>Đăng ký nhận tin</h2>
-            <p>Cập nhật những bộ sưu tập gốm mới nhất từ chúng tôi.</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Nhập email của bạn..." required>
-                <button type="submit">Đăng ký</button>
-            </form>
-        </div>
-    </section>
+---
 
-    <footer class="site-footer">
-        <div class="container footer-content">
-            <div class="footer-info">
-                <h3>Về chúng tôi</h3>
-                <p>Gốm sứ Chị Bờ Vai - Tôn vinh vẻ đẹp gốm Việt thủ công.</p>
-            </div>
-            <div class="footer-contact">
-                <h3>Liên hệ</h3>
-                <p>Email: gomsuchibovai@gmail.com</p>
-                <p>Hotline: 0909 123 456</p>
-            </div>
-            <div class="footer-social">
-                <h3>Kết nối</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2026 Gốm sứ Chị Bờ Vai. All rights reserved.
-        </div>
-    </footer>
+## 3. Các trang đã thực hiện (Checklist)
+Dự án đã hoàn thiện các trang chức năng chính sau:
+- [x] **Trang chủ (`index.html`):** Giao diện chính với Hero Banner, Feature và Newsletter.
+- [x] **Cửa hàng (`shop.html`):** Danh sách toàn bộ sản phẩm dàn theo CSS Grid.
+- [x] **Giỏ hàng (`cart.html`):** Bảng tổng kết sản phẩm và thanh toán.
+- [x] **Giới thiệu (`about.html`):** Thông tin về thương hiệu.
+- [x] **Liên hệ (`contact.html`):** Form gửi thông tin phản hồi.
 
-</body>
-</html>
+---
+
+## 4. Công nghệ sử dụng & Kỹ thuật Coding
+* **Ngôn ngữ:** HTML5, CSS3.
+* **Kỹ thuật bố cục:** * **Flexbox:** Sử dụng cho Header điều hướng và Footer.
+    * **CSS Grid:** Sử dụng cho danh sách sản phẩm (Product Grid) đảm bảo tính cân đối và responsive.
+* **Icon:** Sử dụng bộ icon từ **Font Awesome 6.4.2**.
+
+---
+
+## 5. Nguồn ảnh & Icon
+* **Icon:** [Font Awesome](https://fontawesome.com/)
+* **Hình ảnh:** Hình ảnh sản phẩm gốm sứ được tham khảo từ các làng nghề truyền thống.
+* **Placeholder:** Sử dụng dịch vụ [Via Placeholder](https://via.placeholder.com) cho các sản phẩm đang cập nhật.
+
+---
+
+## 6. Cách chạy dự án
+Bạn có thể xem website theo hai cách sau:
+
+### Cách 1: Chạy trực tiếp trên máy cục bộ
+1. Tải toàn bộ thư mục project về máy.
+2. Mở file `index.html` bằng bất kỳ trình duyệt web nào (Chrome, Edge, Firefox).
+
+### Cách 2: Xem qua link Deploy (nếu có)
+Truy cập đường dẫn:  
+`https://minhhuong0212.github.io/2526_GK2_12F2_Ch-b-vai/index.html`
+
+---
+*Dự án được thực hiện bởi tập thể lớp 12F2 – Trường Đinh Thiện Lý (Lawrence S. Ting School).*
